@@ -7,24 +7,24 @@
 
 import Foundation
 import React
-import FaceLiveness
+import FaceAuthenticator
 
-@objc(CafFaceLiveness)
-class CafFaceLiveness: RCTEventEmitter, FaceLivenessDelegate {
-  static let shared = CafFaceLiveness()
+@objc(CafFaceAuthenticator)
+class CafFaceAuthenticator: RCTEventEmitter, FaceAuthSDKDelegate {
+  static let shared = CafFaceAuthenticator()
   
   @objc
   override static func requiresMainQueueSetup() -> Bool {
     return true
   }
   
-  @objc(startFaceLiveness:personId:config:)
-  func startFaceLiveness(token: String, personId: String, config: String) {
+  @objc(startFaceAuthenticator:personId:config:)
+  func startFaceAuthenticator(token: String, personId: String, config: String) {
     var configDictionary: [String: Any]? = nil
     var filter = Filter.lineDrawing;
-    var cafStage = FaceLiveness.CAFStage.PROD
+    var cafStage = FaceAuthenticator.CAFStage.PROD
     var setLoadingScreen:Bool? = nil;
-    var setExpiringTime:FaceLiveness.Time? = .threeHours;
+    var setExpiringTime:FaceAuthenticator.Time? = .threeHours;
     
     if let data = config.data(using: .utf8) {
       configDictionary = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
@@ -41,74 +41,76 @@ class CafFaceLiveness: RCTEventEmitter, FaceLivenessDelegate {
     if let cafStageValue = configDictionary?["cafStage"] as? Int, let newCafStage = FaceLiveness.CAFStage(rawValue: cafStageValue) {
       cafStage = newCafStage
     }
+
     if let expiringTime = configDictionary?["imageUrlExpirationTime"] as? String, let newImageUrlExpirationTime = FaceLiveness.Time(rawValue: expiringTime){
       setExpiringTime = newImageUrlExpirationTime
     }
     
-    let faceLiveness = FaceLivenessSDK.Build()
-        .setStage(stage: cafStage)
-        .setFilter(filter: filter)
-        .setLoadingScreen(withLoading: setLoadingScreen!)
-        .setCredentials(mobileToken: token, personId: personId)
-        .setImageUrlExpirationTime(time: setExpiringTime!)
-        .build()
-        faceLiveness.delegate = self
+    let faceAuthenticator = FaceAuthSDK.Builder()
+      .setStage(stage: cafStage)
+      .setFilter(filter: filter)
+      .setLoadingScreen(withLoading: setLoadingScreen!)
+      .setCredentials(mobileToken: token, personId: personId)
+      .setImageUrlExpirationTime(time: setExpiringTime!)
+      .build()
 
-        DispatchQueue.main.async {
-            guard let currentViewController = UIApplication.shared.keyWindow!.rootViewController else { return }
-            faceLiveness.startSDK(viewController: currentViewController)
-        }
+      faceAuthenticator.delegate = self
+
+      DispatchQueue.main.async {
+        guard let currentViewController = UIApplication.shared.keyWindow!.rootViewController else { return }
+        faceAuthenticator.startSDK(viewController: currentViewController)
+      }
     }
 
   // FaceLiveness Events
-  func didFinishLiveness(with faceLivenessResult: FaceLiveness.FaceLivenessResult) {
+  func didFinishLiveness(with faceAuthenticatorResult: FaceAuthenticator.FaceAuthenticatorResult) {
     let response : NSMutableDictionary = [:]
-        response["data"] = faceLivenessResult.signedResponse
-        sendEvent(withName: "FaceLiveness_Success", body: response)
+        response["data"] = faceAuthenticatorResult.signedResponse
+        sendEvent(withName: "FaceAuthenticator_Success", body: response)
   }
   
-  func didFinishWithFail(with faceLivenessFailResult: FaceLiveness.FaceLivenessFailResult) {
+  func didFinishWithFail(with faceAuthenticatorFailResult: FaceAuthenticator.FaceAuthenticatorFailResult) {
     let response : NSMutableDictionary = [:]
-        response["message"] = faceLivenessFailResult.description
-        response["type"] = String(describing: faceLivenessFailResult.failType)
-        response["signedResponse"] = String(describing: faceLivenessFailResult.signedResponse)
-        sendEvent(withName: "FaceLiveness_Error", body: response)
+        response["message"] = faceAuthenticatorFailResult.description
+        response["type"] = String(describing: faceAuthenticatorFailResult.failType)
+        response["signedResponse"] = String(describing: faceAuthenticatorFailResult.signedResponse)
+        sendEvent(withName: "FaceAuthenticator_Error", body: response)
   }
   
-  func didFinishWithCancelled(with faceLivenessResult: FaceLiveness.FaceLivenessResult) {
-    sendEvent(withName: "FaceLiveness_Cancel", body: nil)
+  func didFinishWithCancelled(with faceAuthenticatorResult: FaceAuthenticator.FaceAuthenticatorResult) {
+    sendEvent(withName: "FaceAuthenticator_Cancel", body: true)
   }
   
-  func didFinishWithError(with faceLivenessErrorResult: FaceLiveness.FaceLivenessErrorResult) {
+  func didFinishWithError(with faceAuthenticatorErrorResult: FaceAuthenticator.FaceAuthenticatorErrorResult) {
     let response : NSMutableDictionary = [:]
-        response["message"] = faceLivenessErrorResult.description
-        response["type"] = String(describing: faceLivenessErrorResult.errorType)
-        sendEvent(withName: "FaceLiveness_Error", body: response)
+        response["message"] = faceAuthenticatorErrorResult.description
+        response["type"] = String(describing: faceAuthenticatorErrorResult.errorType)
+        sendEvent(withName: "FaceAuthenticator_Error", body: response)
   }
   
   func openLoadingScreenStartSDK() {
-    sendEvent(withName: "FaceLiveness_Loading", body: true)
+    sendEvent(withName: "FaceAuthenticator_Loading", body: true)
   }
   
   func closeLoadingScreenStartSDK() {
-    sendEvent(withName: "FaceLiveness_Loaded", body: true)
+    sendEvent(withName: "FaceAuthenticator_Loaded", body: true)
   }
   
   func openLoadingScreenValidation() {
-    sendEvent(withName: "FaceLiveness_Loading", body: true)
+    sendEvent(withName: "FaceAuthenticator_Loading", body: true)
   }
   
   func closeLoadingScreenValidation() {
-    sendEvent(withName: "FaceLiveness_Loaded", body: true)
+    sendEvent(withName: "FaceAuthenticator_Loaded", body: true)
   }
   
   override func supportedEvents() -> [String]! {
     return [
-      "FaceLiveness_Success",
-      "FaceLiveness_Error",
-      "FaceLiveness_Cancel",
-      "FaceLiveness_Loading",
-      "FaceLiveness_Loaded",
+      "FaceAuthenticator_Success",
+      "FaceAuthenticator_Error",
+      "FaceAuthenticator_Cancel",
+      "FaceAuthenticator_Loading",
+      "FaceAuthenticator_Loaded",
     ]
   }
 }

@@ -6,7 +6,7 @@ import {
   FilterType,
   StageType,
   TimeType,
-} from "react-native-caf-face-liveness";
+} from "react-native-caf-face-authenticator";
 
 const App = () => {
   const mobileToken =
