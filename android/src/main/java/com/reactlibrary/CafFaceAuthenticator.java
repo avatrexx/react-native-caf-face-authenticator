@@ -40,7 +40,7 @@ public class CafFaceAuthenticator extends ReactContextBaseJavaModule {
 
         FaceAuthenticatorConfig formattedConfig = new FaceAuthenticatorConfig(customConfig);
         
-        FaceAuthenticator faceAuthenticator = new FaceLiveness.Builder(token)
+        FaceAuthenticator faceAuthenticator = new FaceAuthenticator.Builder(token)
             .setStage(formattedConfig.cafStage)
             .setFilter(formattedConfig.filter)
             .setEnableScreenshots(formattedConfig.enableScreenshots)
@@ -63,12 +63,13 @@ public class CafFaceAuthenticator extends ReactContextBaseJavaModule {
             public void onError(FaceAuthenticatorResult faceAuthenticatorResult) {
                 String message = "Error: " + faceAuthenticatorResult.getErrorMessage();
                 String type = "Error";
-                WritableMap writableMap = new WritableNativeMap();
-                SDKFailure sdkFailure = faceAuthenticatorResult.getSdkFailure();
 
-                if (sdkFailure instanceof NetworkReason) {
+                WritableMap writableMap = new WritableNativeMap();
+                output.failure.SDKFailure sdkFailure = null;
+
+                if (sdkFailure instanceof output.failure.NetworkReason) {
                     message = ("FaceAuthenticator " + "onError: " + " Throwable: " + ((output.failure.NetworkReason) faceAuthenticatorResult.getSdkFailure()).getThrowable());
-                } else if (sdkFailure instanceof ServerReason) {
+                } else if (sdkFailure instanceof output.failure.ServerReason) {
                     message = ("FaceAuthenticator " + "onError: " + " Status Code: " + ((output.failure.ServerReason) faceAuthenticatorResult.getSdkFailure()).getCode());
                     message = message + " Status Message: " + faceAuthenticatorResult.getSdkFailure().getMessage();
                 }
