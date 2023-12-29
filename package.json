@@ -1,7 +1,6 @@
 {
   "name": "react-native-caf-face-authenticator",
   "version": "0.0.0",
-  "private": true,
   "title": "React Native Caf Face Authenticator",
   "description": "TODO",
   "main": "lib/commonjs/index",
