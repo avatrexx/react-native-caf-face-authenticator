@@ -1,7 +1,7 @@
-export { useFaceLiveness } from "./hooks/useFaceLiveness";
+export { useFaceAuthenticator } from "./hooks/useFaceAuthenticator";
 export {
-  FaceLivenessResponse,
-  FaceLivenessOptions,
+  FaceAuthenticatorOptions,
+  FaceAuthenticatorResponse,
   StageType,
   FilterType,
   TimeType,

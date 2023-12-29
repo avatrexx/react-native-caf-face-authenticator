@@ -91,9 +91,6 @@
       }
     }
   },
-  "workspaces": [
-    "example"
-  ],
   "react-native-builder-bob": {
     "source": "src",
     "output": "lib",
