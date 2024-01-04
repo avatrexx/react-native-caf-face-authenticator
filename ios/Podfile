@@ -5,7 +5,7 @@ source 'https://cdn.cocoapods.org/'
 target 'CafFaceAuthenticator' do
  # Comment the next line if you don't want to use dynamic frameworks
  use_frameworks!
- pod 'FaceAuth',  :path => '/Users/giovani.gambero/Downloads/FaceAuthRN'
+ pod 'FaceAuth',  :path => '/Users/giovani.gambero/Documents/GitHub/react-native-caf-face-authenticator/ios/FaceAuthRN'
  # Pods for RnIos
 
 end
