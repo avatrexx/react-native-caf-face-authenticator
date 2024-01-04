@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2EEE5F59F3438A0625957CB5FE79E09F /* FaceLiveness */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5259039FCC3AFC2AD29404FB1518470E /* Build configuration list for PBXAggregateTarget "FaceLiveness" */;
+			buildPhases = (
+				F0FB0D51C9B846CCA0596353587C9FA3 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				0C01A5A0F8D23BA1CCF54D39DCEE5CCB /* PBXTargetDependency */,
+			);
+			name = FaceLiveness;
+		};
+		6E686EAC34BC790B1DA2581D95F599E6 /* FaceAuth */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = ACA2F3E3F2DCF9F5E2EE4A93D0B6DB27 /* Build configuration list for PBXAggregateTarget "FaceAuth" */;
+			buildPhases = (
+				1F79B28039051FC7CACAFE9FB6E52078 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				CA84A83F8F079723CA055EFCEFBE4BB2 /* PBXTargetDependency */,
+			);
+			name = FaceAuth;
+		};
+		F50B6ACAB8097BFE2624F2E79BB3FD3F /* iProov */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8285682D0F1929D4F52CB4CD4BA6500C /* Build configuration list for PBXAggregateTarget "iProov" */;
+			buildPhases = (
+				1891C781490F98EBFD887B80A7F0952E /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = iProov;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		55FA14AABF5DB984D915517EA25D8E2B /* Pods-CafFaceAuthenticator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 357EC8E0328F594E652312D1CB4CA039 /* Pods-CafFaceAuthenticator-dummy.m */; };
+		65D89C07F7B8A61112A2D5A7DED6482F /* Pods-CafFaceAuthenticator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA79BB926A4EA08BEA2ADC58601DDC28 /* Pods-CafFaceAuthenticator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7148AC7431060CB0D1CA61AA79EF33E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28A273DBC8569E7D1DEEC9F0C7BBC946 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EEE5F59F3438A0625957CB5FE79E09F;
+			remoteInfo = FaceLiveness;
+		};
+		2D28DCEB1894B59F9D36BE8291F2B471 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EEE5F59F3438A0625957CB5FE79E09F;
+			remoteInfo = FaceLiveness;
+		};
+		3E49ECDA3102FA94A94C8D81F76FAD3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F50B6ACAB8097BFE2624F2E79BB3FD3F;
+			remoteInfo = iProov;
+		};
+		4AAC65A037EEFFB79A426056FBFA3ACF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F50B6ACAB8097BFE2624F2E79BB3FD3F;
+			remoteInfo = iProov;
+		};
+		8637AABA9325CB241014D2A019F286D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E686EAC34BC790B1DA2581D95F599E6;
+			remoteInfo = FaceAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		014213B2E71D0DCFC85EF48F3C439105 /* Pods-CafFaceAuthenticator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CafFaceAuthenticator-Info.plist"; sourceTree = "<group>"; };
+		0231F6ED96DC2315C070159FE26F1D72 /* Pods-CafFaceAuthenticator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CafFaceAuthenticator.release.xcconfig"; sourceTree = "<group>"; };
+		02CF5D32EDC17B13255CE2133579E731 /* iProov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iProov.release.xcconfig; sourceTree = "<group>"; };
+		02EF4D07FCDB45F1781D539591EA46A7 /* FaceAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FaceAuth.release.xcconfig; sourceTree = "<group>"; };
+		066FA23D2AA84F6C0CCB757156BBB3F1 /* Pods-CafFaceAuthenticator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CafFaceAuthenticator.debug.xcconfig"; sourceTree = "<group>"; };
+		1B6DBC7189102AE5CDC929AA597B3249 /* FaceAuth-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FaceAuth-xcframeworks.sh"; sourceTree = "<group>"; };
+		1B9E8D499A815183AFD83EC6AFE10A43 /* FaceAuthenticator.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = FaceAuthenticator.xcframework; sourceTree = "<group>"; };
+		2D4AE70F46EF4873990D78F88C53F5F1 /* Pods-CafFaceAuthenticator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CafFaceAuthenticator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		357EC8E0328F594E652312D1CB4CA039 /* Pods-CafFaceAuthenticator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CafFaceAuthenticator-dummy.m"; sourceTree = "<group>"; };
+		37E1343315AC9C31C00619A9DB983409 /* iProov-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "iProov-xcframeworks.sh"; sourceTree = "<group>"; };
+		3A6C0406326DCFC7D1F01B88E60ED521 /* Pods-CafFaceAuthenticator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CafFaceAuthenticator-acknowledgements.plist"; sourceTree = "<group>"; };
+		5138349F9B8E7169BD890C7CFA053990 /* FaceLiveness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FaceLiveness.debug.xcconfig; sourceTree = "<group>"; };
+		6C3099851A739CD11E85FCAB447B56FF /* Pods-CafFaceAuthenticator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CafFaceAuthenticator"; path = Pods_CafFaceAuthenticator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		93E832126FA913C7E34F66A1C057172F /* FaceLiveness-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FaceLiveness-xcframeworks.sh"; sourceTree = "<group>"; };
+		9CE256DEFF8A9A2D078E6BA09E14BE48 /* FaceLiveness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FaceLiveness.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AA79BB926A4EA08BEA2ADC58601DDC28 /* Pods-CafFaceAuthenticator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CafFaceAuthenticator-umbrella.h"; sourceTree = "<group>"; };
+		B3605112106C200F8CA6F88D2D75CCEC /* Pods-CafFaceAuthenticator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CafFaceAuthenticator.modulemap"; sourceTree = "<group>"; };
+		C514D8E75D14BEC5C2672A2706789E12 /* FaceAuth.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FaceAuth.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C5978F0F6541004E707B4C696E7837D0 /* iProov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iProov.debug.xcconfig; sourceTree = "<group>"; };
+		E3BD6E0D609E36CA551F24AE20CC0F09 /* FaceAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FaceAuth.debug.xcconfig; sourceTree = "<group>"; };
+		E6B7095585215565FEE1C10686B24A6B /* FaceLiveness.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = FaceLiveness.xcframework; path = "face-liveness/FaceLiveness.xcframework"; sourceTree = "<group>"; };
+		EBAA9C5AD8F5FE01AB7DF02BE29F90D0 /* iProov.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = iProov.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C97A8A8282439B43398FBD7873BAB251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7148AC7431060CB0D1CA61AA79EF33E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CA95B954FAF33B5D939FC4C3808C572 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B6DBC7189102AE5CDC929AA597B3249 /* FaceAuth-xcframeworks.sh */,
+				E3BD6E0D609E36CA551F24AE20CC0F09 /* FaceAuth.debug.xcconfig */,
+				02EF4D07FCDB45F1781D539591EA46A7 /* FaceAuth.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../Documents/GitHub/react-native-caf-face-authenticator/ios/Pods/Target Support Files/FaceAuth";
+			sourceTree = "<group>";
+		};
+		17C2633BE404A63094A96AA57B995F63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B9E8D499A815183AFD83EC6AFE10A43 /* FaceAuthenticator.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A160BD9DEF1766C3AD7E95A34FBA41F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C3099851A739CD11E85FCAB447B56FF /* Pods-CafFaceAuthenticator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DDD8C2DF208A96138276D9F801CFBB2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				723F6BDE02CF44C2EB23615F0FA79E40 /* FaceAuth */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		32F294FB43984A4C93978FE99C25165A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F08F496CFAC1640A8999B14434D01AB /* Pods-CafFaceAuthenticator */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4712AE330E6B58E03B7B71A0B6C670B0 /* iProov */ = {
+			isa = PBXGroup;
+			children = (
+				EBF914BF6F4195DE1673483AB7B61CCC /* Frameworks */,
+				98759C3AD739D3F9B238B3D2256C4E45 /* Support Files */,
+			);
+			name = iProov;
+			path = iProov;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		59666EAFC29F30CC18DA0537A88334C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6B7095585215565FEE1C10686B24A6B /* FaceLiveness.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F08F496CFAC1640A8999B14434D01AB /* Pods-CafFaceAuthenticator */ = {
+			isa = PBXGroup;
+			children = (
+				B3605112106C200F8CA6F88D2D75CCEC /* Pods-CafFaceAuthenticator.modulemap */,
+				2D4AE70F46EF4873990D78F88C53F5F1 /* Pods-CafFaceAuthenticator-acknowledgements.markdown */,
+				3A6C0406326DCFC7D1F01B88E60ED521 /* Pods-CafFaceAuthenticator-acknowledgements.plist */,
+				357EC8E0328F594E652312D1CB4CA039 /* Pods-CafFaceAuthenticator-dummy.m */,
+				014213B2E71D0DCFC85EF48F3C439105 /* Pods-CafFaceAuthenticator-Info.plist */,
+				AA79BB926A4EA08BEA2ADC58601DDC28 /* Pods-CafFaceAuthenticator-umbrella.h */,
+				066FA23D2AA84F6C0CCB757156BBB3F1 /* Pods-CafFaceAuthenticator.debug.xcconfig */,
+				0231F6ED96DC2315C070159FE26F1D72 /* Pods-CafFaceAuthenticator.release.xcconfig */,
+			);
+			name = "Pods-CafFaceAuthenticator";
+			path = "Target Support Files/Pods-CafFaceAuthenticator";
+			sourceTree = "<group>";
+		};
+		62253D0B600C743F4C87BED807124048 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C514D8E75D14BEC5C2672A2706789E12 /* FaceAuth.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		723F6BDE02CF44C2EB23615F0FA79E40 /* FaceAuth */ = {
+			isa = PBXGroup;
+			children = (
+				17C2633BE404A63094A96AA57B995F63 /* Frameworks */,
+				62253D0B600C743F4C87BED807124048 /* Pod */,
+				0CA95B954FAF33B5D939FC4C3808C572 /* Support Files */,
+			);
+			name = FaceAuth;
+			path = /Users/giovani.gambero/Downloads/FaceAuthRN;
+			sourceTree = "<absolute>";
+		};
+		98759C3AD739D3F9B238B3D2256C4E45 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				37E1343315AC9C31C00619A9DB983409 /* iProov-xcframeworks.sh */,
+				C5978F0F6541004E707B4C696E7837D0 /* iProov.debug.xcconfig */,
+				02CF5D32EDC17B13255CE2133579E731 /* iProov.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iProov";
+			sourceTree = "<group>";
+		};
+		AFDAB12BA9CFA0872E12B79506C59C6A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				93E832126FA913C7E34F66A1C057172F /* FaceLiveness-xcframeworks.sh */,
+				5138349F9B8E7169BD890C7CFA053990 /* FaceLiveness.debug.xcconfig */,
+				9CE256DEFF8A9A2D078E6BA09E14BE48 /* FaceLiveness.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FaceLiveness";
+			sourceTree = "<group>";
+		};
+		BBB9FBF28E0DDFBBE063D11F6CE1BBC4 /* FaceLiveness */ = {
+			isa = PBXGroup;
+			children = (
+				59666EAFC29F30CC18DA0537A88334C1 /* Frameworks */,
+				AFDAB12BA9CFA0872E12B79506C59C6A /* Support Files */,
+			);
+			name = FaceLiveness;
+			path = FaceLiveness;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				2DDD8C2DF208A96138276D9F801CFBB2 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				DF6D3F72B859726305DC1DB6C6B1606A /* Pods */,
+				1A160BD9DEF1766C3AD7E95A34FBA41F /* Products */,
+				32F294FB43984A4C93978FE99C25165A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF6D3F72B859726305DC1DB6C6B1606A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBB9FBF28E0DDFBBE063D11F6CE1BBC4 /* FaceLiveness */,
+				4712AE330E6B58E03B7B71A0B6C670B0 /* iProov */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EBF914BF6F4195DE1673483AB7B61CCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA9C5AD8F5FE01AB7DF02BE29F90D0 /* iProov.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		80B3F392269CBB819CD9DD0E7EC3DF46 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D89C07F7B8A61112A2D5A7DED6482F /* Pods-CafFaceAuthenticator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		373A712FB42E9F4B90418CA0D7A1FEED /* Pods-CafFaceAuthenticator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BF7F986A92FAEBEF4262A0D839B1CE9 /* Build configuration list for PBXNativeTarget "Pods-CafFaceAuthenticator" */;
+			buildPhases = (
+				80B3F392269CBB819CD9DD0E7EC3DF46 /* Headers */,
+				FC9BA768A88201C4F229D99CE5BDEA1C /* Sources */,
+				C97A8A8282439B43398FBD7873BAB251 /* Frameworks */,
+				6F3878777B26FCC37FA92106711C06EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FDA0842A78581D012EF7F21D301D64F /* PBXTargetDependency */,
+				E2CFE133C90F77263B92269C384524EF /* PBXTargetDependency */,
+				0A84CC341448D7B4F49E89AA1C0F43EB /* PBXTargetDependency */,
+			);
+			name = "Pods-CafFaceAuthenticator";
+			productName = Pods_CafFaceAuthenticator;
+			productReference = 6C3099851A739CD11E85FCAB447B56FF /* Pods-CafFaceAuthenticator */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1A160BD9DEF1766C3AD7E95A34FBA41F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E686EAC34BC790B1DA2581D95F599E6 /* FaceAuth */,
+				2EEE5F59F3438A0625957CB5FE79E09F /* FaceLiveness */,
+				F50B6ACAB8097BFE2624F2E79BB3FD3F /* iProov */,
+				373A712FB42E9F4B90418CA0D7A1FEED /* Pods-CafFaceAuthenticator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F3878777B26FCC37FA92106711C06EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1891C781490F98EBFD887B80A7F0952E /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/iProov/iProov-xcframeworks.sh",
+				"${PODS_ROOT}/iProov/iProov.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/iProov/iProov.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/iProov/iProov-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F79B28039051FC7CACAFE9FB6E52078 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/FaceAuth/FaceAuth-xcframeworks.sh",
+				"${PODS_ROOT}/../../../../../Downloads/FaceAuthRN/FaceAuthenticator.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FaceAuth/FaceAuthenticator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/FaceAuth/FaceAuth-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0FB0D51C9B846CCA0596353587C9FA3 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/FaceLiveness/FaceLiveness-xcframeworks.sh",
+				"${PODS_ROOT}/FaceLiveness/face-liveness/FaceLiveness.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FaceLiveness/FaceLiveness.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/FaceLiveness/FaceLiveness-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC9BA768A88201C4F229D99CE5BDEA1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55FA14AABF5DB984D915517EA25D8E2B /* Pods-CafFaceAuthenticator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A84CC341448D7B4F49E89AA1C0F43EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iProov;
+			target = F50B6ACAB8097BFE2624F2E79BB3FD3F /* iProov */;
+			targetProxy = 3E49ECDA3102FA94A94C8D81F76FAD3E /* PBXContainerItemProxy */;
+		};
+		0C01A5A0F8D23BA1CCF54D39DCEE5CCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iProov;
+			target = F50B6ACAB8097BFE2624F2E79BB3FD3F /* iProov */;
+			targetProxy = 4AAC65A037EEFFB79A426056FBFA3ACF /* PBXContainerItemProxy */;
+		};
+		9FDA0842A78581D012EF7F21D301D64F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FaceAuth;
+			target = 6E686EAC34BC790B1DA2581D95F599E6 /* FaceAuth */;
+			targetProxy = 8637AABA9325CB241014D2A019F286D4 /* PBXContainerItemProxy */;
+		};
+		CA84A83F8F079723CA055EFCEFBE4BB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FaceLiveness;
+			target = 2EEE5F59F3438A0625957CB5FE79E09F /* FaceLiveness */;
+			targetProxy = 28A273DBC8569E7D1DEEC9F0C7BBC946 /* PBXContainerItemProxy */;
+		};
+		E2CFE133C90F77263B92269C384524EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FaceLiveness;
+			target = 2EEE5F59F3438A0625957CB5FE79E09F /* FaceLiveness */;
+			targetProxy = 2D28DCEB1894B59F9D36BE8291F2B471 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		139A03503F40BDC39B2927CE813EC0DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 066FA23D2AA84F6C0CCB757156BBB3F1 /* Pods-CafFaceAuthenticator.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CafFaceAuthenticator/Pods-CafFaceAuthenticator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CafFaceAuthenticator/Pods-CafFaceAuthenticator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2DE9B81EBC13DDE8885B63E33C28D99A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02EF4D07FCDB45F1781D539591EA46A7 /* FaceAuth.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C091CB24981AA958D694ABC9891630E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5138349F9B8E7169BD890C7CFA053990 /* FaceLiveness.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49CF70C5B65F73923EFD40DFE1749844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0231F6ED96DC2315C070159FE26F1D72 /* Pods-CafFaceAuthenticator.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CafFaceAuthenticator/Pods-CafFaceAuthenticator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CafFaceAuthenticator/Pods-CafFaceAuthenticator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		68AC9B2269E8583FA4E63E816C710EB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CE256DEFF8A9A2D078E6BA09E14BE48 /* FaceLiveness.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BEBCB1969BBDAD30B3AADED9DF03E9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3BD6E0D609E36CA551F24AE20CC0F09 /* FaceAuth.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BFD5096CCAAF92B6BE32A4BD9E6542B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02CF5D32EDC17B13255CE2133579E731 /* iProov.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD4C0B9F9D3AE8E7346D6ED8F88A5FBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5978F0F6541004E707B4C696E7837D0 /* iProov.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5259039FCC3AFC2AD29404FB1518470E /* Build configuration list for PBXAggregateTarget "FaceLiveness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C091CB24981AA958D694ABC9891630E /* Debug */,
+				68AC9B2269E8583FA4E63E816C710EB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8285682D0F1929D4F52CB4CD4BA6500C /* Build configuration list for PBXAggregateTarget "iProov" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD4C0B9F9D3AE8E7346D6ED8F88A5FBD /* Debug */,
+				8BFD5096CCAAF92B6BE32A4BD9E6542B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BF7F986A92FAEBEF4262A0D839B1CE9 /* Build configuration list for PBXNativeTarget "Pods-CafFaceAuthenticator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				139A03503F40BDC39B2927CE813EC0DD /* Debug */,
+				49CF70C5B65F73923EFD40DFE1749844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA2F3E3F2DCF9F5E2EE4A93D0B6DB27 /* Build configuration list for PBXAggregateTarget "FaceAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BEBCB1969BBDAD30B3AADED9DF03E9E /* Debug */,
+				2DE9B81EBC13DDE8885B63E33C28D99A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

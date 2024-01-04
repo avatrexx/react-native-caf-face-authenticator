@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.source_files = "ios/**/*.{h,c,cc,cpp,m,mm,swift}"
   s.requires_arc = true
-  s.dependency "FaceAuth", "3.1.11"
+  s.dependency 'FaceAuth', '3.1.11'
   s.dependency "React"
   # ...
   # s.dependency "..."

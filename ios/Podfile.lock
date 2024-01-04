@@ -1,0 +1,28 @@
+PODS:
+  - FaceAuth (0.0.1):
+    - FaceLiveness (= 3.1.9)
+  - FaceLiveness (3.1.9):
+    - iProov (= 11.0.2)
+  - iProov (11.0.2)
+
+DEPENDENCIES:
+  - FaceAuth (from `/Users/giovani.gambero/Downloads/FaceAuthRN`)
+
+SPEC REPOS:
+  https://github.com/combateafraude/iOS.git:
+    - FaceLiveness
+  trunk:
+    - iProov
+
+EXTERNAL SOURCES:
+  FaceAuth:
+    :path: "/Users/giovani.gambero/Downloads/FaceAuthRN"
+
+SPEC CHECKSUMS:
+  FaceAuth: bcd6b0346239a40d594c1c98b46b1f8a60b7e8b7
+  FaceLiveness: 600cad2667a5d412112404b2a401be6c9ce50d4e
+  iProov: 728c99d21f8e25774366b4077841cd2c8e4932c1
+
+PODFILE CHECKSUM: d3129054f31062ecaf8db3b8cc9f6a2c64d38fc1
+
+COCOAPODS: 1.14.3

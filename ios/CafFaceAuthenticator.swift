@@ -1,6 +1,4 @@
 //
-//  CafFaceLiveness.swift
-//  cafbridge_faceliveness
 //
 //  Created by Lorena Zanferrari on 20/11/23.
 //
@@ -8,7 +6,7 @@
 import Foundation
 import React
 import FaceAuthenticator
-
+import FaceLiveness
 @objc(CafFaceAuthenticator)
 class CafFaceAuthenticator: RCTEventEmitter, FaceAuthSDKDelegate {
   static let shared = CafFaceAuthenticator()
@@ -22,7 +20,7 @@ class CafFaceAuthenticator: RCTEventEmitter, FaceAuthSDKDelegate {
   func startFaceAuthenticator(token: String, personId: String, config: String) {
     var configDictionary: [String: Any]? = nil
     var filter = Filter.lineDrawing;
-    var cafStage = FaceAuthenticator.CAFStage.PROD
+    var cafStage = FaceLiveness.CAFStage.PROD
     var setLoadingScreen:Bool? = nil;
     var setExpiringTime:FaceAuthenticator.Time? = .threeHours;
     
@@ -42,7 +40,7 @@ class CafFaceAuthenticator: RCTEventEmitter, FaceAuthSDKDelegate {
       cafStage = newCafStage
     }
 
-    if let expiringTime = configDictionary?["imageUrlExpirationTime"] as? String, let newImageUrlExpirationTime = FaceLiveness.Time(rawValue: expiringTime){
+    if let expiringTime = configDictionary?["imageUrlExpirationTime"] as? String, let newImageUrlExpirationTime = FaceAuthenticator.Time(rawValue: expiringTime){
       setExpiringTime = newImageUrlExpirationTime
     }
     
@@ -62,7 +60,7 @@ class CafFaceAuthenticator: RCTEventEmitter, FaceAuthSDKDelegate {
       }
     }
 
-  // FaceLiveness Events
+  // FaceAuth Events
   func didFinishLiveness(with faceAuthenticatorResult: FaceAuthenticator.FaceAuthenticatorResult) {
     let response : NSMutableDictionary = [:]
         response["data"] = faceAuthenticatorResult.signedResponse

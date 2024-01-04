@@ -1,6 +1,6 @@
 {
   "name": "react-native-caf-face-authenticator",
-  "version": "0.0.5",
+  "version": "0.0.19",
   "title": "React Native Caf Face Authenticator",
   "description": "TODO",
   "main": "lib/commonjs/index",
@@ -98,5 +98,6 @@
       "module",
       "typescript"
     ]
-  }
+  },
+  "dependencies": {}
 }

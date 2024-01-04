@@ -5753,10 +5753,10 @@ react-is@^17.0.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-native-caf-face-authenticator@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/react-native-caf-face-authenticator/-/react-native-caf-face-authenticator-0.0.5.tgz#b31c47b37f838ac1706959b1dd4275ba433200d1"
-  integrity sha512-agixcJ7iubOxS7Eebs0Jy82W1kFmp4ii+Uf/IdtPrrnNggi2MJTj+Do+VxCN1h3/9VvJ/YCPRG5nUW59ZMNpSA==
+react-native-caf-face-authenticator@^0.0.19:
+  version "0.0.19"
+  resolved "https://registry.yarnpkg.com/react-native-caf-face-authenticator/-/react-native-caf-face-authenticator-0.0.19.tgz#daab018ad56bd1159fa18674e59e80a22b812c21"
+  integrity sha512-H04tIFuJB83prZfkwxn5AEOgPflWTfgwLfI4w390iQ0ZbvQ0Qv9klf/qHgqTfLD6Pn3vTW8VLbrhEMSSXIJ1Ig==
 
 react-native@0.72.1:
   version "0.72.1"
